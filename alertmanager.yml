@@ -1,0 +1,13 @@
+route:
+    receiver: smtp
+receivers:
+    - name: smtp
+      email_configs:
+          - smarthost: mail.vip.hr:993
+            hello: a1net.hr
+            to: 'bruno.sever@a1net.hr'
+            from: 'bruno.sever@a1net.hr'
+            auth_username: 'bruno.sever'
+            auth_password: 'leptir1978'
+            send_resolved: true
+            require_tls: true
